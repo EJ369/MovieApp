@@ -18,7 +18,7 @@ class MovieViewModel : ViewModel() {
     }
 
     fun getMoviesData(category: String) {
-        val key = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1NTZiNjBlMzU3YmJjN2NkZWU5YTc4OGYzYTM0YTMzYyIsInN1YiI6IjY2NDBlNzJkZGFkOGY2ZjU2ODIwODQzMSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.nm0EvkxRad_McJnHr3S5oPyOHSpkCriyhHhqdEemUAg"
+        val key = "Your API Key"
 
         FetchData.getMovies(key, category, onSuccess = { movies ->
             if (movies.isNotEmpty()) {
